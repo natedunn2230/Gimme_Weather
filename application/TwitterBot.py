@@ -1,8 +1,4 @@
-import requests
+import WeatherUtility
 import GeoUtility
 
-
-
-
-
-print(GeoUtility.find_coordinates("Troy Ohio"))
+print(WeatherUtility.get_weather_data(28.5, -81.37))
