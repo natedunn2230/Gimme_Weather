@@ -22,3 +22,6 @@ class TwitterUtility:
 
     def post_tweet(self, tweet):
         self.twitter_api.update_status(tweet)
+
+    def get_mentions(self):
+        return self.twitter_api.mentions_timeline()
